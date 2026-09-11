@@ -1,0 +1,275 @@
+:root {
+    --color-bg: rgb(18, 15, 12);
+    --color-surface: rgb(30, 24, 18);
+    --color-surface-raised: rgb(40, 33, 25);
+    --color-border: rgb(60, 50, 38);
+    --color-text-primary: rgb(232, 220, 200);
+    --color-text-muted: rgb(130, 115, 95);
+    --color-accent: rgb(180, 155, 95);
+    --color-accent-dim: rgb(100, 85, 50);
+    --color-locked: rgb(55, 48, 40);
+    --color-locked-text: rgb(80, 70, 58);
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-large {
+    font-size: 48px;
+    color: var(--color-text-primary);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 6px;
+}
+
+.title-small {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-center;
+    letter-spacing: 4px;
+}
+
+.label-muted {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.label-chapter {
+    font-size: 10px;
+    color: var(--color-accent);
+    letter-spacing: 3px;
+}
+
+.label-chapter-title {
+    font-size: 20px;
+    color: var(--color-text-primary);
+    -unity-font-style: bold;
+}
+
+.label-chapter-desc {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: var(--color-accent);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--color-accent);
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    -unity-text-align: middle-center;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border-width: 0;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-center;
+}
+
+.chapter-card {
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
+    border-width: 1px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapter-card--locked {
+    background-color: var(--color-locked);
+    border-color: var(--color-locked);
+}
+
+.chapter-card--locked .label-chapter {
+    color: var(--color-locked-text);
+}
+
+.chapter-card--locked .label-chapter-title {
+    color: var(--color-locked-text);
+}
+
+.chapter-card--locked .label-chapter-desc {
+    color: var(--color-locked-text);
+}
+
+.section-header {
+    font-size: 10px;
+    color: var(--color-accent);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.evidence-strip {
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.evidence-thumb {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-surface-raised);
+    border-color: var(--color-border);
+    border-width: 1px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 24px;
+    -unity-text-align: middle-center;
+}
+
+.evidence-thumb--add {
+    border-color: var(--color-accent-dim);
+    color: var(--color-accent-dim);
+}
+
+.notes-field {
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--color-text-primary);
+    font-size: 13px;
+    padding: 12px;
+    height: 80px;
+    margin-bottom: 8px;
+    white-space: normal;
+}
+
+.btn-submit {
+    background-color: var(--color-surface-raised);
+    border-color: var(--color-accent-dim);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--color-accent);
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    -unity-text-align: middle-center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-panel {
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
+    border-width: 1px;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+}
+
+.popup-title {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    letter-spacing: 4px;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+
+.settings-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-color: var(--color-border);
+    border-bottom-width: 1px;
+}
+
+.settings-row-label {
+    font-size: 14px;
+    color: var(--color-text-primary);
+}
+
+.btn-scan {
+    background-color: rgba(30, 24, 18, 0.9);
+    border-color: var(--color-accent);
+    border-width: 1px;
+    border-radius: 50px;
+    color: var(--color-accent);
+    font-size: 11px;
+    letter-spacing: 4px;
+    width: 90px;
+    height: 90px;
+    -unity-text-align: middle-center;
+}
+
+.btn-crime-board {
+    background-color: rgba(30, 24, 18, 0.9);
+    border-color: var(--color-border);
+    border-width: 1px;
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    font-size: 9px;
+    letter-spacing: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.screen-title {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    letter-spacing: 4px;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+ScrollView > #unity-content-and-vertical-scroll-container > 
+#unity-vertical-scroll-container {
+    display: none;
+}
+
+.unity-scroll-view__vertical-scroller {
+    display: none;
+}
