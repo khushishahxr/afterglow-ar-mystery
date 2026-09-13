@@ -29,6 +29,17 @@ This repo contains the original code, scenes, and custom assets. It excludes a s
 - `AlchemyLabProps`
 - `Multistory Dungeons 2`
 
-## Screenshots / gameplay
+## Screenshots
 
-_TODO: add screenshots and a gameplay GIF here._
+<table>
+<tr>
+<td><img src="screenshots/Afterglow01.jpeg" width="260"/><br/><sub>Title screen</sub></td>
+<td><img src="screenshots/Afterglow03.jpeg" width="260"/><br/><sub>AR evidence detection, anchored in the room</sub></td>
+<td><img src="screenshots/Afterglow06.jpeg" width="260"/><br/><sub>Investigation log / journal</sub></td>
+</tr>
+<tr>
+<td><img src="screenshots/Afterglow02.jpeg" width="260"/><br/><sub>Analysis & theory-building</sub></td>
+<td><img src="screenshots/Afterglow04.jpeg" width="260"/><br/><sub>Case file & final theory submission</sub></td>
+<td><img src="screenshots/Afterglow05.jpeg" width="260"/><br/><sub>Final decision</sub></td>
+</tr>
+</table>
